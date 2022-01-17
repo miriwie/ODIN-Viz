@@ -10,7 +10,7 @@
                           + '</div>');
           throw error;
       }
-      const el = document.getElementById('vis');
-      vegaEmbed("#vis", spec, embedOpt)
+      const el = document.getElementById('scatter');
+      vegaEmbed("#scatter", spec, embedOpt)
         .catch(error => showError(el, error));
     })(vegaEmbed);
