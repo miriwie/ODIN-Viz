@@ -1,4 +1,5 @@
-# ODIN-Viz
+# Discrepancy in public data publications
+
 
 See our prototyp at https://miriwie.github.io/ODIN-Viz/
 
