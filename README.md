@@ -9,6 +9,6 @@ To-Do:
 - [ ] redesign map (WIP)
 - [ ] Implement text description
 - [ ] css design
-- [ ] add intractions
+- [X] add intractions
 - [ ] add bubble animation
 - [ ] implement language change
