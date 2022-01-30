@@ -4,19 +4,50 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.8.1"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
-</head>
-<body>
-	<h1>Understanding ODIN Score</h1>
-	<div id="map"></div>
-	<br>
-<!--	<div id="scatter"></div>-->
-<!--	<div id="bar"></div>-->
-	<div id="linked"></div>
-	<div id="detail"></div>
+<head>
+			<link rel="stylesheet" href="main.css">
+		</head>
+<body >
+
+		<div class="wrapper">
+			<section class="mapSection">
+				<div class="flex_container">
+					<div id="header-div">
+						<div><h1 id="header">Understanding ODIN Score</h1> </div>
+				</div>
+				<div class="wrapper_row">
+					<div id="map"></div>
+					<div id="mapText" >
+						<p> Hier soll dein Text zu Odin score usw sein!
+							Hier soll dein Text zu Odin score usw sein! Hier soll dein Text zu Odin score usw sein!
+							Hier soll dein Text zu Odin score usw sein! Hier soll dein Text zu Odin score usw sein!
+							Hier soll dein Text zu Odin score usw sein!</p>
+					</div>
+				</div>
+
+				</div>
+			</section>
+
+			<section class="linkedSection">
+				<div class="center_container" >
+					<div id="linked">
+					</div>
+				</div>
+			</section>
+
+			<section class="detailSection">
+				<div class="center_container">
+					 <div id="detail"> </div>
+				</div>
+			</section>
+
+		</div>
+
+
+
+
 
 	<script src="scripts/map_OS.js"></script>
-<!--	<script src="scripts/scatter_CO.js"></script>-->
-<!--	<script src="scripts/bar_dev.js"></script>-->
 	<script src="scripts/linked_charts.js"></script>
 	<script src="scripts/details.js"></script>
 
