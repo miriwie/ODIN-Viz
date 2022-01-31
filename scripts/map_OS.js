@@ -11,6 +11,7 @@
       "type": "ordinal",
       "bin": true,
       "field": "Overall",
+      "legend": {"title": "Overall Score"},
       "scale": {
         "range": [
           "#D3D3D3",
@@ -29,12 +30,8 @@
       {"type": "quantitative", "field": "Coverage"}
     ]
   },
-  "projection": {
-    "center": [10, 55],
-    "clipExtent": [[0, 0], [400, 300]],
-    "scale": 250,
-    "type": "mercator"
-  },
+  "height": 750,
+  "projection": {"center": [10, 56], "scale": 670, "type": "mercator"},
   "transform": [
     {
       "lookup": "id",
@@ -45,6 +42,7 @@
       }
     }
   ],
+  "width": 1000,
   "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json",
   "datasets": {
     "data-c2713db3446741d6ec6869e974f92f9d": [
@@ -401,7 +399,7 @@
       }
     ]
   }
-};
+}
       var embedOpt = {"mode": "vega-lite"};
 
       function showError(el, error){
