@@ -11,7 +11,7 @@
           "value": "#b91f13"
         },
         "opacity": {
-          "condition": {"value": 1, "selection": "selector005"},
+          "condition": {"value": 1, "selection": "selector006"},
           "value": 0.2
         },
         "tooltip": [
@@ -23,10 +23,10 @@
         "x": {"type": "quantitative", "field": "Openness_SC"},
         "y": {"type": "quantitative", "field": "Coverage_SC"}
       },
-      "height": 750,
-      "selection": {"selector005": {"type": "single", "encodings": ["x"]}},
+      "height": 650,
+      "selection": {"selector006": {"type": "single", "encodings": ["x"]}},
       "transform": [{"filter": "(datum.Data_categories === 'All Categories')"}],
-      "width": 750
+      "width": 650
     },
     {
       "mark": "bar",
@@ -38,7 +38,7 @@
           "scale": {"range": ["#b91f13", "#4682b4"]}
         },
         "opacity": {
-          "condition": {"value": 1, "selection": "selector005"},
+          "condition": {"value": 1, "selection": "selector006"},
           "value": 0.2
         },
         "tooltip": [
@@ -50,10 +50,10 @@
         "x": {"type": "nominal", "field": "Country"},
         "y": {"type": "quantitative", "field": "Deviation"}
       },
-      "height": 750,
-      "selection": {"selector005": {"type": "single", "encodings": ["x"]}},
+      "height": 650,
+      "selection": {"selector006": {"type": "single", "encodings": ["x"]}},
       "transform": [{"filter": "(datum.Data_categories === 'All Categories')"}],
-      "width": 750
+      "width": 650
     }
   ],
   "data": {"name": "data-c4d084cb66334cc56accfb25300fc715"},
