@@ -1,6 +1,6 @@
 
 #header{
-    border:2px solid blue;
+
     font-family: 'Didact Gothic', sans-serif;
     font-size: 40px;
     width:800px;
@@ -14,7 +14,7 @@
 }
 
 #mapText{
-    border:2px solid darkslategrey;
+
     font-family: sans-serif;
     font-size: 10px;
     margin-top: 10px;
@@ -23,7 +23,7 @@
     padding: 10px;
 }
  #map{
-    border:2px solid darkred;
+    
     width: fit-content;
     margin-top: 10px;
 
