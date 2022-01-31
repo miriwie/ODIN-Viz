@@ -26,10 +26,13 @@
     margin-top: 10px;
 }
 
+ #map:hover{
+     border:2px solid black;
+ }
+
 
 #linked{
     margin: 10px;
-
 
 }
 #detail{
@@ -66,6 +69,7 @@ section{
     justify-content: center;
     align-items: center;
     width: 100%;
+    flex-direction: column;
 }
 
 .wrapper_row{
@@ -73,4 +77,93 @@ section{
     display: flex;
     flex-direction: row;
 }
+
+/*section 2 */
+
+/*popUp Text  */
+#popUpWrapper{
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+button {
+    background-color: #47a386;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 25px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    font-size: 14px;
+}
+#open{
+    background-color: #47a386;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 25px;
+    margin-left: 900px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    font-size: 14px;
+}
+
+button:hover{
+    border:1px solid black;
+}
+
+#open{
+    display: block;
+}
+
+#open:hover{
+    border:1px solid black;
+}
+
+.modal-container{
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+
+    opacity: 0;
+    pointer-events: none;
+
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.modal-container.show{
+    pointer-events: auto;
+    opacity: 1;
+    border:2px solid darkred;
+
+
+}
+
+.modal {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 40px 50px;
+    width: 600px;
+    max-width: 100%; /*kann man gut loeschen*/
+    text-align: center;
+}
+
+.modal h1{
+    margin: 0;
+}
+
+.modal h1{
+    font-size: 24px;
+    opacity: 0.7;
+}
+
 

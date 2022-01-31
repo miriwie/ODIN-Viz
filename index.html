@@ -5,7 +5,9 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.8.1"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
 <head>
+			<script type = "text/javascript" src="scripts/popup.js"></script>
 			<link rel="stylesheet" href="main.css">
+
 		</head>
 <body >
 
@@ -29,9 +31,41 @@
 			</section>
 
 			<section class="linkedSection">
-				<div class="center_container" >
-					<div id="linked">
+
+				<div class="center_container">
+
+
+
+
+					<div id="popUpWrapper">
+						<button id="open" type="button" onclick=openButton()>
+		 					Explanation
+						</button>
+
+
+				<div class="modal-container" id="modal_container">
+					<div class="modal">
+						<h1>Modals are</h1>
+						<p>
+							Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+							ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+							dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+							amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+							invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+							justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+							dolor sit amet.
+						</p>
+						<button id="close" type="button" onclick=openButton()>
+							Close
+						</button>
 					</div>
+				</div>
+ 					<script src="scripts/popup.js"></script>
+
+
+					</div>
+					<div id="linked"> </div>
+
 				</div>
 			</section>
 
