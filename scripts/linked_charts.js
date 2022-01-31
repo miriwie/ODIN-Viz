@@ -11,9 +11,10 @@
           "value": "#b91f13"
         },
         "opacity": {
-          "condition": {"value": 1, "selection": "selector006"},
+          "condition": {"value": 1, "selection": "selector011"},
           "value": 0.2
         },
+        "size": {"value": 150},
         "tooltip": [
           {"type": "nominal", "field": "Country"},
           {"type": "quantitative", "field": "Overall score"},
@@ -24,7 +25,7 @@
         "y": {"type": "quantitative", "field": "Coverage_SC"}
       },
       "height": 650,
-      "selection": {"selector006": {"type": "single", "encodings": ["x"]}},
+      "selection": {"selector011": {"type": "single", "encodings": ["x"]}},
       "transform": [{"filter": "(datum.Data_categories === 'All Categories')"}],
       "width": 650
     },
