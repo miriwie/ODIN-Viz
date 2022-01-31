@@ -11,7 +11,7 @@
       "type": "ordinal",
       "bin": true,
       "field": "Overall",
-      "legend": {"title": "Overall Score"},
+      "legend": {"title": "ODIN Score:"},
       "scale": {
         "range": [
           "#D3D3D3",
@@ -30,8 +30,8 @@
       {"type": "quantitative", "field": "Coverage"}
     ]
   },
-  "height": 750,
-  "projection": {"center": [10, 56], "scale": 670, "type": "mercator"},
+  "height": 650,
+  "projection": {"center": [10, 56], "scale": 570, "type": "mercator"},
   "transform": [
     {
       "lookup": "id",
@@ -42,7 +42,7 @@
       }
     }
   ],
-  "width": 1000,
+  "width": 900,
   "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json",
   "datasets": {
     "data-c2713db3446741d6ec6869e974f92f9d": [
