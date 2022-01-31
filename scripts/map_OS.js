@@ -30,8 +30,8 @@
       {"type": "quantitative", "field": "Coverage"}
     ]
   },
-  "height": 800,
-  "projection": {"center": [10, 55], "scale": 600, "type": "mercator"},
+  "height": 750,
+  "projection": {"center": [10, 56], "scale": 670, "type": "mercator"},
   "transform": [
     {
       "lookup": "id",
