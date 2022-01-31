@@ -1,5 +1,6 @@
 (function(vegaEmbed) {
-	var spec = {
+	var spec = 
+{
   "config": {"view": {"continuousWidth": 400, "continuousHeight": 300}},
   "hconcat": [
     {
@@ -10,7 +11,7 @@
           "value": "#b91f13"
         },
         "opacity": {
-          "condition": {"value": 1, "selection": "selector016"},
+          "condition": {"value": 1, "selection": "selector005"},
           "value": 0.2
         },
         "tooltip": [
@@ -22,8 +23,10 @@
         "x": {"type": "quantitative", "field": "Openness_SC"},
         "y": {"type": "quantitative", "field": "Coverage_SC"}
       },
-      "selection": {"selector016": {"type": "single", "encodings": ["x"]}},
-      "transform": [{"filter": "(datum.Data_categories === 'All Categories')"}]
+      "height": 750,
+      "selection": {"selector005": {"type": "single", "encodings": ["x"]}},
+      "transform": [{"filter": "(datum.Data_categories === 'All Categories')"}],
+      "width": 750
     },
     {
       "mark": "bar",
@@ -31,10 +34,11 @@
         "color": {
           "type": "nominal",
           "field": "Deviation_norm",
+          "legend": {"title": "Deviation"},
           "scale": {"range": ["#b91f13", "#4682b4"]}
         },
         "opacity": {
-          "condition": {"value": 1, "selection": "selector016"},
+          "condition": {"value": 1, "selection": "selector005"},
           "value": 0.2
         },
         "tooltip": [
@@ -46,8 +50,10 @@
         "x": {"type": "nominal", "field": "Country"},
         "y": {"type": "quantitative", "field": "Deviation"}
       },
-      "selection": {"selector016": {"type": "single", "encodings": ["x"]}},
-      "transform": [{"filter": "(datum.Data_categories === 'All Categories')"}]
+      "height": 750,
+      "selection": {"selector005": {"type": "single", "encodings": ["x"]}},
+      "transform": [{"filter": "(datum.Data_categories === 'All Categories')"}],
+      "width": 750
     }
   ],
   "data": {"name": "data-c4d084cb66334cc56accfb25300fc715"},
