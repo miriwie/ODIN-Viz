@@ -42,7 +42,7 @@
       }
     }
   ],
-  "width": 900,
+  "width": "container",
   "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json",
   "datasets": {
     "data-c2713db3446741d6ec6869e974f92f9d": [
