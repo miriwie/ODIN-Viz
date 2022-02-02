@@ -15,9 +15,9 @@
 
 #mapText{
     font-family: sans-serif;
-    font-size: 50px;
+    font-size: 14px;
     margin-top: 10px;
-    width: 50vw;
+    width: 20vw;
     height: fit-content;
     padding: 10px;
 }
