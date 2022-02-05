@@ -23,10 +23,10 @@
         "x": {"type": "quantitative", "field": "Openness_SC"},
         "y": {"type": "quantitative", "field": "Coverage_SC"}
       },
-      "height": 650,
+      "height": "container",
       "selection": {"selector031": {"type": "single", "on": "mouseover"}},
       "transform": [{"filter": "(datum.Data_categories === 'All Categories')"}],
-      "width": 650
+      "width": "container"
     },
     {
       "data": {"name": "data-08639e0bab20040f849c4ac1f9db48a3"},
@@ -49,9 +49,9 @@
         "x": {"type": "nominal", "field": "Country"},
         "y": {"type": "quantitative", "field": "Score", "stack": null}
       },
-      "height": 650,
+      "height": "container",
       "selection": {"selector031": {"type": "single", "on": "mouseover"}},
-      "width": 650
+      "width": "container"
     }
   ],
   "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json",
