@@ -30,8 +30,8 @@
       {"type": "quantitative", "field": "Coverage"}
     ]
   },
-  "height": 650,
-  "projection": {"center": [10, 56], "scale": 570, "type": "mercator"},
+  "height": "container",
+  "projection": {"center": [10, 56], "scale": 650, "type": "mercator"},
   "transform": [
     {
       "lookup": "id",
@@ -42,7 +42,7 @@
       }
     }
   ],
-  "width": 900,
+  "width": "container",
   "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json",
   "datasets": {
     "data-c2713db3446741d6ec6869e974f92f9d": [
@@ -399,7 +399,7 @@
       }
     ]
   }
-}
+};
       var embedOpt = {"mode": "vega-lite"};
 
       function showError(el, error){
@@ -410,7 +410,7 @@
                           + '</div>');
           throw error;
       }
-      const el = document.getElementById('map');
-      vegaEmbed("#map", spec, embedOpt)
+      const el = document.getElementById('odin_map');
+      vegaEmbed("#odin_map", spec, embedOpt)
         .catch(error => showError(el, error));
     })(vegaEmbed);
