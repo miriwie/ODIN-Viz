@@ -26,7 +26,7 @@
       "height": "container",
       "selection": {"selector031": {"type": "single", "on": "mouseover"}},
       "transform": [{"filter": "(datum.Data_categories === 'All Categories')"}],
-      "width": "container"
+      "width": 300
     },
     {
       "data": {"name": "data-08639e0bab20040f849c4ac1f9db48a3"},
@@ -51,7 +51,7 @@
       },
       "height": "container",
       "selection": {"selector031": {"type": "single", "on": "mouseover"}},
-      "width": "container"
+      "width": 300
     }
   ],
   "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json",
