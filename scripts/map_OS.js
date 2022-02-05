@@ -30,7 +30,7 @@
       {"type": "quantitative", "field": "Coverage"}
     ]
   },
-  "height": 650,
+  "height": "container",
   "projection": {"center": [10, 56], "scale": 570, "type": "mercator"},
   "transform": [
     {
@@ -42,7 +42,7 @@
       }
     }
   ],
-  "width": 650,
+  "width": "container",
   "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json",
   "datasets": {
     "data-d41dcaa0ff1a8fbe8377b8a09f971e79": [
