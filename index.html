@@ -1,87 +1,69 @@
 <!DOCTYPE html>
 <html>
-  </style>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.8.1"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
-<head>
-			<meta charset="UTF-8">
-			<script type = "text/javascript" src="scripts/popup.js"></script>
-			<link rel="stylesheet" href="main.css">
+	</style>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.8.1"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
+	<head>
+		<meta charset="UTF-8">
+		<script type = "text/javascript" src="scripts/popup.js"></script>
+		<link rel="stylesheet" href="main.css">
 
-		</head>
-<body >
+	</head>
+	<body style="background-color:#20B2E8;"> <!--#f79b00-->
 		<div class="wrapper">
 			<section class="mapSection">
 				<div class="flex_container">
 					<div id="header-div">
-						<div><h1 id="header">Discrepancy in data publications in the EU</h1> </div>
-				</div>
-				<div class="wrapper_row">
-					<div id="map"></div>
-					<div id="mapText">
-						<p> Der ODIN Score wird von Open Data Watch erhoben und bewertet die staatich veröffentlichten Daten in Offenheit und Abdeckung. <br>
-Die Offenheit setzt sich dabei aus der Maschienenlesbarkeit, der Verwendung nicht proprietärer Dateiformate, den verfügbaren Download Optionen, der Verfügbarkeit von Metadaten und den Nutzungsbedingungen zusammen. Dahingegen der Abdeckungsscore aus den Indikatoren und Aufschlüsselung, der Verfügbarkeit in den letzten 5 und 10 Jahren und der Verfügbarkeit in erster und zweiter Verwaltungseinheit. 
-</p>
+						<div><h1 id="header">Diskrepanzen in Datenveröffentlichungen der EU&#8209;Staaten</h1> </div> <!--Discrepancy in data publications in the EU-->
+					</div>
+					<div id="Row">&nbsp;</div>
+					<div class="wrapper_row">
+						<div id="mapText">
+							<p> Die Der ODIN Score wird von <a href="https://opendatawatch.com" target="_blank" rel="noopener noreferrer">Open Data Watch</a> erhoben und bewertet die staatich veröffentlichten Daten in Offenheit und Abdeckung. <br>
+							Die Offenheit setzt sich dabei aus der Maschienenlesbarkeit, der Verwendung nicht proprietärer Dateiformate, den verfügbaren Download Optionen, der Verfügbarkeit von Metadaten und den Nutzungsbedingungen zusammen. Dahingegen der Abdeckungsscore aus den Indikatoren und Aufschlüsselung, der Verfügbarkeit in den letzten 5 und 10 Jahren und der Verfügbarkeit in erster und zweiter Verwaltungseinheit. </p>
+						</div>
+						<div id="map">
+							<div id="odin_map"></div>
+						</div>
 					</div>
 
 				</div>
-
-				</div>
 			</section>
-
 			<section class="linkedSection">
-
 				<div class="wrapper_row">
-
 					<div id="popUpWrapper">
-
 						<div id="linked"> </div>
 						<button id="open" type="button" onclick=openButton()>
-		 					Explanation
+		 						Explanation
 						</button>
-
-				<div class="modal-container" id="modal_container">
-					<div class="modal">
-						<h1>Explanation</h1>
-						<p>
-							Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-							ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-							dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-							amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-							invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-							justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-							dolor sit amet.
-						</p>
-						<button id="close" type="button" onclick=openButton()>
-							Close
-						</button>
+						<div class="modal-container" id="modal_container">
+							<div class="modal">
+								<h1>Explanation</h1>
+								<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+								ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+								dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+								amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+								invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+								justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+								dolor sit amet.</p>
+								<button id="close" type="button" onclick=openButton()>
+									Close
+								</button>
+							</div>
+						</div>
+						<script src="scripts/popup.js"></script>
 					</div>
-				</div>
- 					<script src="scripts/popup.js"></script>
-
-
-					</div>
-
-
 				</div>
 			</section>
-
 			<section class="detailSection">
 				<div class="center_container">
 					 <div id="detail"> </div>
 				</div>
 			</section>
-
 		</div>
-
-
-
-
-
-	<script src="scripts/map_OS.js"></script>
-	<script src="scripts/linked_charts.js"></script>
-	<script src="scripts/details.js"></script>
-
-</body>
+		<script src="scripts/map_OS.js"></script>
+		<script src="scripts/linked_charts.js"></script>
+		<script src="scripts/details.js"></script>
+	</body>
 </html>

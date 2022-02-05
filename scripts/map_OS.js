@@ -410,7 +410,7 @@
                           + '</div>');
           throw error;
       }
-      const el = document.getElementById('map');
-      vegaEmbed("#map", spec, embedOpt)
+      const el = document.getElementById('odin_map');
+      vegaEmbed("#odin_map", spec, embedOpt)
         .catch(error => showError(el, error));
     })(vegaEmbed);
