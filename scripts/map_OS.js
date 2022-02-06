@@ -11,7 +11,7 @@
       "type": "ordinal",
       "bin": true,
       "field": "Overall",
-      "legend": {"title": "ODIN Score:"},
+      "legend": {"orient": "bottom-left", "title": "ODIN Score:"},
       "scale": {
         "range": [
           "#D3D3D3",
