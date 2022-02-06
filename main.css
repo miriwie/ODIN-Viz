@@ -5,17 +5,19 @@ body {
 #header{
 
     font-family: 'Didact Gothic', sans-serif;
-    font-size: 1vw;
+    font-size: 2vw;
 	color: #f79b00;
 	text-transform: uppercase;
     margin: 0 auto;
     text-align: center;
+	height: 100%;
 
 }
 
 #header-div{
     margin: 30px;
 	width: 100%;
+	height: 10%;
 }
 
 #Row{
@@ -113,7 +115,7 @@ section{
 	background-color: rgb(250,250,250);
 	margin: 10px;
     display: flex;
-	height: 100%;
+	height: 90%;
 	width: 100%;
     flex-direction: row;
 }
