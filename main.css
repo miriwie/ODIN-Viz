@@ -3,21 +3,19 @@ body {
        }
 
 #header{
-
     font-family: 'Didact Gothic', sans-serif;
     font-size: 2vw;
 	color: #f79b00;
 	text-transform: uppercase;
-    margin: 0 auto;
-    text-align: center;
-	height: 100%;
-
+	font-weight: bold;
 }
 
 #header-div{
-    margin: 30px;
 	width: 100%;
 	height: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 #Row{
@@ -30,16 +28,17 @@ body {
 
 #mapText{
     font-family: sans-serif;
-    font-size: 18px;
-    margin: 10px;
-    width: 25%;
+    font-size: 20px;
+    margin-left: 50px;
+    width: 30%;
     height: fit-content;
-    padding: 10px;
+	text-align: justify;
+	text-align-last: none;
 }
  
 #map{
-    width: 75%;
-    margin: 10px;
+    width: 70%;
+    margin: 20px;
 	display: flex;
 }
 
@@ -60,9 +59,9 @@ body {
 	height: 100%;
 }
 
-#map:hover{
-     border:2px solid black;
- }
+/*#map:hover{*/
+/*     border:2px solid black;*/
+/* }*/
 
 }
 #detail{
