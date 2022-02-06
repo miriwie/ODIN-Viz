@@ -169,7 +169,7 @@ button:hover{
     height: fit-content;
     border:2px solid black;
 }
-#bubble1{
+.bubble1{
     width: 100%;
     height: fit-content;
     margin: 10px ;
