@@ -5,7 +5,7 @@ body {
 #header{
 
     font-family: 'Didact Gothic', sans-serif;
-    font-size: 40px;
+    font-size: 1vw;
 	color: #f79b00;
 	text-transform: uppercase;
     margin: 0 auto;
@@ -129,7 +129,7 @@ section{
     justify-content: center;
     min-height: 100vh;*/
     height: 100%;
-	width: 100%;
+	width: 25%;
 }
 
 button {
