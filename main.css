@@ -1,5 +1,6 @@
 body {
 	overflow:hidden;
+
        }
 
 #header{
@@ -60,11 +61,11 @@ body {
 	height: 100%;
 }
 
-#map:hover{
+/*#map:hover{
      border:2px solid black;
- }
+ }*/
 
-}
+
 #detail{
     margin: 10px;
     align-content: center;
@@ -75,6 +76,7 @@ body {
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
+
 }
 
 section{
@@ -84,12 +86,14 @@ section{
     scroll-snap-align: start;
 }
 
-/*.detailSection{*/
-/*    width: 100%;*/
-/*    height: 100vh;*/
-/*    display: flex;*/
-/*    scroll-snap-align: start;*/
-/*}*/
+.detailSection{
+    width: 100%;
+ margin-top: 20px;
+  display: flex;
+    scroll-snap-align: start;
+    margin-bottom: 20px;
+
+}
 
 .flex_container{
     background-color: rgb(250,250,250);
@@ -160,6 +164,26 @@ button:hover{
     border:1px solid black;
 }
 
+#70a8b01d-db76-4eab-9784-dbc7414be22e{
+    width: 100%;
+    height: fit-content;
+    border:2px solid black;
+}
+#bubble1{
+    width: 100%;
+    height: fit-content;
+    margin: 10px ;
+    background-color: rgb(250,250,250);
+    margin-bottom: 20px;
+}
+
+#bubble2{
+    border:2px solid green;
+    width: 100%;
+    height: fit-content;
+    margin: 20px ;
+}
+
 
 #open:hover{
     border:1px solid black;
@@ -179,7 +203,7 @@ button:hover{
     left: 0;
     height: 100vh;
     width: 100vw;
-    
+
 
 }
 
