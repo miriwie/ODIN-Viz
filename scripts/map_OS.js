@@ -25,9 +25,7 @@
     },
     "tooltip": [
       {"type": "nominal", "field": "Country"},
-      {"type": "quantitative", "field": "Overall"},
-      {"type": "quantitative", "field": "Openness"},
-      {"type": "quantitative", "field": "Coverage"}
+      {"type": "quantitative", "field": "Overall"}
     ]
   },
   "height": "container",
