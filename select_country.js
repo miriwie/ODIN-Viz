@@ -1,3 +1,4 @@
+
 //*********************************************
 // Function that Shows an HTML element
 //*********************************************
@@ -18,15 +19,8 @@ function hideDiv(divID)
 //*****************************************************************************
 // Function that Hides all the Div elements in the select menu Value
 //*****************************************************************************
-function hideAllDivs()
+function hideAllDivs1()
 {
-	//Loop through the seclect menu values and hide all
-	var selectMenu = document.getElementById("selectMenu");
-	for (var i=0; i<=selectMenu.options.length -1; i++)
-	{
-		hideDiv(selectMenu.options[i].value);
-	}
-
 	//Loop through the seclect menu values and hide all
 	var selectMenu = document.getElementById("selectMenu1");
 	for (var i=0; i<=selectMenu.options.length -1; i++)
@@ -39,7 +33,8 @@ function hideAllDivs()
 //*********************************************
 function toggle(showID)
 {
-	hideAllDivs(); // Hide all
+	hideAllDivs1(); // Hide all
 	showDiv(showID); // Show the one we asked for
 
 }
+
