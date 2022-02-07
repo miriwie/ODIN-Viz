@@ -1,20 +1,37 @@
 # Discrepancies in governmental data publications of the EU states
 
+## Table of contents:
+- [Context] (#context)
+- [Concept] (#concept)
+- [Visualization Design] (#munzner)
+	- [Domain problem characterization] (#Domain-problem)
+	- [Data and task abstraction] (#data-abstraction)
+	- [Visual encoding and interaction design] (#interaction-design)
+	- [ Algorithm design] (#algorithm-design)
+- [Evaluation] (#evaluation)
+- [Interactive web-based visualization] (#viz)
+
 ## Context <a name="context"></a>
 
-The openness of data has increased in importance in recent years. Many new laws have been enacted to regulate and improve "Open Data". For example, the 2003 and 2019 Open Data Directive of the EU, the OPEN Government Data Act in the USA or the Open-Data-Gesetz 2017 in Germany. But these laws mainly associate openness with open data. This is certainly one of the main aspects, but at least as important is the coverage, i.e. the quantity and quality of the data. Because without qualitative data or without data in general, the best openness is worthless. While everyone is free to use the data, the problems cannot be solved without sufficient data.
+The importance of openness of data has increased in recent years. Many new laws have been enacted to regulate and improve "Open Data". So for example, the 2003 and 2019 Open Data Directive of the EU, the OPEN Government Data Act in the USA or the Open-Data-Gesetz 2017 in Germany. Nevertheless, these laws mainly associate open data with openness. This is certainly one of the main aspects, however the coverage, i.e. the quantity and quality of the data, is not less important. While everyone is free to use the data, the problems cannot be solved without sufficient data. Since without qualitative data or without data in general, the best openness is worthless.
 
 To help countries build better and more resilient national statistical systems, the <a href="https://opendatawatch.com" target="_blank" rel="noopener noreferrer">Open Data Watch</a> publishes the Odin score. ODIN rates the government publications on a score from 0 to 100 dividing it into both the openness and coverage of data.
 
 ## Concept <a name="concept"></a>
-The concept of the visualization is to introduce the user to the ODIN score and then go into detail to visualize the problem, the missing coverage. For this purpose, the visualization is divided into 4 slides. From the general Odin Score, to the coverage elements of the data categories. Thereby, users can select the countries and data categories that are relevant for them.
+The concept of the visualization is to introduce the user to the ODIN score and then go into detail visualizing the problem, the missing coverage. For this purpose, the visualization is divided into four slides, from the general Odin Score to the coverage elements of the data categories. Thereby, users can select the countries and data categories that are relevant for them and use the explanatory texts, understand the complex topic.
 
 ## Visualization Design <a name="visualization-design"></a>
 
-### Domain problem characterization <a name="Domain problem characterization"></a>
+### Domain problem characterization <a name="Domain-problem"></a>
 
+Access to the pulic released data has been an important topic in the last years. Therefore many countries have been making effort to improve the openness of their data. Nevertheless, such an important data component as coverage of the data has been neglected. Therefore many topics may not be able to be discussed through the absence of the date. Not only the quantity but also the quality of the data is the component of the coverage. So statistics with low coverage about a topic can be corrupted, which may have more severe consequences as if it not be discussed at all.
+
+Our target group are (net-)politicians and people interested in politics from the EU. Prior knowledge is not necessary, but with a netpolitical background, many contexts might be better understood. Nevertheless, the coverage is not well-known among the people we talked to and Open Data itself is mainly associated with availability or usability. Since we did not talk to politicians, only to people interested in politics, we don't know if the coverage is a political issue at the moment. But since neither the political discourse is about it, nor the corresponding Open Data laws dealing with coverage, we assume that the topic is not beeing discussed either.
 
 ### Data and task abstraction <a name="data-abstraction"></a>
+
+The task of this visualization is to create understanding of openness and coverage as independent data components, to make clear the importance of coverage component, as well as make users pay more attention to this coverage component and maybe contribute (as politicians) to improving the situation.
+For the information about the ODIN dataset, purpose of it and whose behalf it was created see above [Context] (#context)
 
 
 ### Visual encoding and interaction design <a name="interaction-design"></a>
@@ -36,7 +53,15 @@ The background and highlight color are the color scheme of the ODIN score (light
 
 ### Algorithm Design <a name="algorithm-design"></a>
 
-## Interactive web-based visualization
+The ODIN data set contains data for 187 countries (4836 rows x 19 columns). Since only the EU states are considered in the visualization, the data set could be reduced to 702 rows. In addition, data frames were created for the different visualizations with the necessary data in each case in order to process only the smallest possible sets.
+
+The biggest bottleneck are currently the embedded plotly graphs. Due to the current inefficient code the website takes a few seconds to load.
+
+## Evaluation <a name="evaluation"></a>
+
+Due to bad time management, the prototype was not finished until shortly before the deadline and could not be tested sufficiently. As a result, tests with the target group were also not possible any more.
+
+## Interactive web-based visualization <a name="viz"></a>
 
 See our visualization at https://miriwie.github.io/ODIN-Viz/
 
