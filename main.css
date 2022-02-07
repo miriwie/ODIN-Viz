@@ -51,7 +51,7 @@ body {
 	text-align-last: none;
 }
 
-#detailText{
+.detailText{
     font-family: sans-serif;
     font-size: 20px;
     width: 100%;
