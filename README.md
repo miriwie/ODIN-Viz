@@ -31,22 +31,23 @@ Our target group are (net-)politicians and people interested in politics from th
 ### Data and task abstraction <a name="data-abstraction"></a>
 
 The task of this visualization is to create understanding of openness and coverage as independent data components, to make clear the importance of coverage component, as well as make users pay more attention to this coverage component and maybe contribute (as politicians) to improving the situation.
-For the information about the ODIN dataset, purpose of it and whose behalf it was created see above [Context](#context)
+For the information about the ODIN dataset, purpose of it and whose behalf it was created see above [Context](#context). The used data set was collected in 2020. Open Data Watch analysed the governmental data releases. For example in Germany publications of the Statistisches Bundesamt.
 
 
 ### Visual encoding and interaction design <a name="interaction-design"></a>
-The visualization includes 4 slides. On every slide is an textual description to undestand the complexity of the ODIN score. 
-- Overall View (map of europe): Introducing the ODIN Score in countries of the EU
+The visualization includes four slides. On every slide is an textual description provided to make the complexity of the ODIN score undestandable.
+ 
+- Overall View (map of Europe): Introducing the ODIN Score in countries of the EU
 	- The used color scheme consists of distinguishable shades of green, from light to dark. Countries not considered are marked in gray.
-	- By using a tooltip with the exact score value, countries in the same color group can be compared.
+	- By using a tooltip with the exact score value countries in the same color group can be compared.
 - Comparison View (barchart + scatterplott): Compare the Opennes and the Coverage for different EU countries in the barchart and showing an overview including the overall score in the scatterplot.
 	- The color scheme in the barchart consists of blue for openness and red for coverage. The scatterplot, uses the same color scheme as the map, as it is also used to visualize the ODIN score.
-	- With a mouse hover selection, the individual bars and exact values can be viewed. It also clarifies the layered barchart. In the scatterplot all three values, openness coverage and the overall ODIN score can be viewed in a tooltip.
+	- With a mouse hover selection the individual bars and exact values can be viewed. It also clarifies the layered barchart. In the scatterplot all three values, openness coverage and the overall ODIN score can be viewed in a tooltip.
 - Data Categories View (bubblechart): Show the coverage score in different data categories on a symple coverage axis from 0 to 100. The different statistical fields are displayed on different levels and in different colors.
 	- The three statistical fields and the overall score are color coded with blue, red, purple and black. But other blue and red tones are used than in the barchart.
-	- The embadded plotly graph offers many possibilities of interaction, from zoom, to displaying the exact value. In addition, the name of the data category is displayed in a tooltip.
-- Coverage Element View (barchart): By selecting a data category, the coverage elements of the data category are plotted in a bar chart.
-	- The bars are visualized in another shade of blue. Since only the values are visualized, no further colors are necessary.
+	- The embadded plotly graph offers many possibilities of interaction, from zoom, to displaying the exact value or disabling parts of the legend. In addition, the name of the data category is displayed in a tooltip.
+- Coverage Element View (barchart): By selecting a data category the coverage elements of the data category are plotted in a bar chart.
+	- The bars are visualized in another shade of blue. Since only the scores are visualized, no further colors are necessary.
 	- There is also a tooltip with the coverage value and the plotly interactions.
 
 The background and highlight color are the color scheme of the ODIN score (light blue and orange).
@@ -59,18 +60,27 @@ The biggest bottleneck are currently the embedded plotly graphs. Due to the curr
 
 ## Evaluation <a name="evaluation"></a>
 
+What did not work as expected?
 Due to bad time management, the prototype was not finished until shortly before the deadline and could not be tested sufficiently. As a result, tests with the target group were also not possible any more.
+We have planed to implement animations and more interactions between the visualisations, but because of the limited Java script knowledge it was not possible.
+
+What would you improve if you had more time? 
+Implement animation to involve the user in the topic and more interaction possibilities for better usability with Java Script using React and D3 libraries. 
+The loading of the website is also a little bit to long because of the bottle neck. This Issues could be also solved with Java Script.
+
+If you used other libraries or frameworks other than Altair please explain briefly why.
+For the third and forth Visualisation We used plotly in python, because we aimed to create interaction and animation, because Altair hardly offers that possibilities. But how it turned out plotly in python hasn’t been better than Altair at this point. I also tried to use plotly in Java Script, but it required Java Script experience.
 
 ## Interactive web-based visualization <a name="viz"></a>
 
 See our visualization at https://miriwie.github.io/ODIN-Viz/
 
-## To-Do
-- [X] To-Do list
-- [X] redesign barchart
-- [X] redesign map
-- [X] Implement text description
-- [X] css design
-- [X] add intractions
-- [ ] add bubble animation
-- [ ] implement language change
+<!--## To-Do-->
+<!--- [X] To-Do list-->
+<!--- [X] redesign barchart-->
+<!--- [X] redesign map-->
+<!--- [X] Implement text description-->
+<!--- [X] css design-->
+<!--- [X] add intractions-->
+<!--- [ ] add bubble animation-->
+<!--- [ ] implement language change-->
