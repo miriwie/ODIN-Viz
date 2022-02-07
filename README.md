@@ -1,4 +1,4 @@
-# Discrepancy in public data publications
+# Discrepancies in governmental data publications of the EU states
 
 ## Context <a name="context"></a>
 
