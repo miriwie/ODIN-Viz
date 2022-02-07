@@ -27,8 +27,10 @@ The visualization includes 4 slides. On every slide is an textual description to
 	- With a mouse hover selection, the individual bars and exact values can be viewed. It also clarifies the layered barchart. In the scatterplot all three values, openness coverage and the overall ODIN score can be viewed in a tooltip.
 - Data Categories View (bubblechart): Show the coverage score in different data categories on a symple coverage axis from 0 to 100. The different statistical fields are displayed on different levels and in different colors.
 	- The three statistical fields and the overall score are color coded with blue, red, purple and black. But other blue and red tones are used than in the barchart.
-	- 
+	- The embadded plotly graph offers many possibilities of interaction, from zoom, to displaying the exact value. In addition, the name of the data category is displayed in a tooltip.
 - Coverage Element View (barchart): By selecting a data category, the coverage elements of the data category are plotted in a bar chart.
+	- The bars are visualized in another shade of blue. Since only the values are visualized, no further colors are necessary.
+	- There is also a tooltip with the coverage value and the plotly interactions.
 
 The background and highlight color are the color scheme of the ODIN score (light blue and orange).
 
@@ -38,7 +40,7 @@ The background and highlight color are the color scheme of the ODIN score (light
 
 See our visualization at https://miriwie.github.io/ODIN-Viz/
 
-To-Do:
+## To-Do
 - [X] To-Do list
 - [X] redesign barchart
 - [X] redesign map
