@@ -1,15 +1,15 @@
 # Discrepancies in governmental data publications of the EU states
 
-## Table of contents:
-- [Context] (#context)
-- [Concept] (#concept)
-- [Visualization Design] (#munzner)
-	- [Domain problem characterization] (#Domain-problem)
-	- [Data and task abstraction] (#data-abstraction)
-	- [Visual encoding and interaction design] (#interaction-design)
-	- [ Algorithm design] (#algorithm-design)
-- [Evaluation] (#evaluation)
-- [Interactive web-based visualization] (#viz)
+## Table of Contents
+- [Context](#context)
+- [Concept](#concept)
+- [Visualization Design](#munzner)
+	- [Domain problem characterization](#Domain-problem)
+	- [Data and task abstraction](#data-abstraction)
+	- [Visual encoding and interaction design](#interaction-design)
+	- [ Algorithm design](#algorithm-design)
+- [Evaluation](#evaluation)
+- [Interactive web-based visualization](#viz)
 
 ## Context <a name="context"></a>
 
@@ -31,7 +31,7 @@ Our target group are (net-)politicians and people interested in politics from th
 ### Data and task abstraction <a name="data-abstraction"></a>
 
 The task of this visualization is to create understanding of openness and coverage as independent data components, to make clear the importance of coverage component, as well as make users pay more attention to this coverage component and maybe contribute (as politicians) to improving the situation.
-For the information about the ODIN dataset, purpose of it and whose behalf it was created see above [Context] (#context)
+For the information about the ODIN dataset, purpose of it and whose behalf it was created see above [Context](#context)
 
 
 ### Visual encoding and interaction design <a name="interaction-design"></a>
